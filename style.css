@@ -1,0 +1,14 @@
+body{
+    background-color: aqua;
+    color: black;
+    flex-direction: column;
+}
+#unico{
+    color: red;
+    font-weight: bold;
+}
+
+.subtitulo{
+    font-size: italic;
+    color: blue;
+}
