@@ -1,6 +1,6 @@
 var adivina=Math.floor(Math.random()*100)+1;//genera un numero aleatorio entre 1 y 100
 var contador=0;
-function checkGuess(){
+function numero(){
     var valor=parseInt(document.getElementById('guessInput').value);
 
     if(isNaN(valor)){
