@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangulos</title>
+    <script src="triangulo.js"></script>
+</head>
+<body>
+    <p>ingrese los lados del triangulo</p>
+    <p>
+        <input type="number" name="lado1" id="lado1" placeholder="Lado 1" onblur="captura1()">
+    </p>
+    <p>
+        <input type="number" name="lado2" id="lado2" placeholder="Lado 2" onblur="captura2()">
+    </p>
+    <p>
+        <input type="number" name="lado3" id="lado3" placeholder="Lado 3" onblur="captura3()">
+    </p>
+    <input type="button" value="Area" onclick="area()">
+    <input type="button" value="Perimetro" onclick="perimetro()">
+    <input type="button" value="Tipo de Triangulo" onclick="tipo()">
+    <p><span id="area"></span></p>
+    
+    <p><span id="perimetro"></span></p>
+    <p><span id="titr"></span></p>
+</body>
+</html>
