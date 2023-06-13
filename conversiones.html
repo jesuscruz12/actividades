@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolares/Pesos </title>
+    <script src="conversiones.js"></script>
+</head>
+<body>
+    <h1>Convierta su moneda</h1>
+    <p>
+        <input type="number" name="moneda" id="moneda" placeholder="Moneda" onblur="captura1()">
+    </p>
+    <p><input type="button" value=""></p>
+    <p>Elija el tipo de conversion que desea:</p>
+    <p><label for="pesos">Pesos:</label>
+        <input type="text" id="pesos" name="pesos">
+    </p>
+    <p><input type="button" value="Dolares" onclick="dolar()">
+        <input type="button" value="Pesos" onclick="pesos()">
+    </p>
+    <p id="dol"></p>
+</body>
+</html>
