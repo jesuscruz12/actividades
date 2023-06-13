@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolares/Pesos</title>
+    <link rel="stylesheet" href="pesosadolares.css">
+    <script src="pesosadolares.js"></script>
+</head>
+
+<body>
+    <div class="container">
+      <h1>Conversión de Pesos a Dólares</h1>
+    
+      <form>
+        <p><label for="pesos">Pesos:</label>
+        <input type="number" id="pesos" name="pesos">
+        <br><br></p>
+        
+        <p>
+            <label for="dolares">Dólares:</label>
+            <input type="number" id="dolares" name="dolares">
+            <br><br>
+        </p>
+        
+        <p>
+        <label for="tipo-cambio">Valor del dólar:</label>
+        <input type="number" id="tipo-cambio" name="tipo-cambio"  required>
+        <br><br>
+        </p>
+        
+    
+        <p><input type="button" value="Convertir" onclick="convertirMoneda()">
+        <input type="button" value="Limpiar" onclick="limpiarFormulario()">
+        </p>
+     
+      </form>
+    </div>
+      
+</body>
+    
+    
+</html>
