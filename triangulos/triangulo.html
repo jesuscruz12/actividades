@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Triangulos</title>
-    <script src="triangulo.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Triángulos</title>
+  <link rel="stylesheet" href="triangulo.css">
+  <script src="triangulo.js"></script>
 </head>
 <body>
-    <p>ingrese los lados del triangulo</p>
-    <p>
-        <input type="number" name="lado1" id="lado1" placeholder="Lado 1" onblur="captura1()">
-    </p>
-    <p>
-        <input type="number" name="lado2" id="lado2" placeholder="Lado 2" onblur="captura2()">
-    </p>
-    <p>
-        <input type="number" name="lado3" id="lado3" placeholder="Lado 3" onblur="captura3()">
-    </p>
-    <input type="button" value="Area" onclick="area()">
-    <input type="button" value="Perimetro" onclick="perimetro()">
-    <input type="button" value="Tipo de Triangulo" onclick="tipo()">
-    <p><span id="area"></span></p>
+  <div class="container">
+    <h1>Triángulos</h1>
+    <h2>Ingrese los lados del Triángulo</h2>
+    <form>
+      <div class="input-group">
+        <label for="lado1">Lado 1:</label>
+        <input type="number" id="lado1" name="lado1" placeholder="Ingrese el lado 1" onblur="captura1()">
+      </div>
     
-    <p><span id="perimetro"></span></p>
-    <p><span id="titr"></span></p>
+      <div class="input-group">
+        <label for="lado2">Lado 2:</label>
+        <input type="number" id="lado2" name="lado2" placeholder="Ingrese el lado 2" onblur="captura2()">
+      </div>
+    
+      <div class="input-group">
+        <label for="lado3">Lado 3:</label>
+        <input type="number" id="lado3" name="lado3" placeholder="Ingrese el lado 3" onblur="captura3()">
+      </div>
+    
+      <div class="button-group">
+        <input type="button" value="Área" onclick="area()">
+        <input type="button" value="Perímetro" onclick="perimetro()">
+        <input type="button" value="Tipo de Triángulo" onclick="tipo()">
+      </div>
+    
+      <div class="result-group">
+        <p><span id="area"></span></p>
+        <p><span id="perimetro"></span></p>
+        <p><span id="titr"></span></p>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
