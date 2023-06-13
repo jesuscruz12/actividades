@@ -15,7 +15,7 @@ function captura3() {
 
 }
 function perimetro(){
-    document.getElementById("perimetro").innerHTML="el perimetro del triangulo es: "+(lado1+lado2+lado3)
+    document.getElementById("perimetro").innerHTML="El perimetro del triangulo es: "+(lado1+lado2+lado3)
  
 }
 function area(){
@@ -28,11 +28,11 @@ function area(){
         if(v1>lado3 && v2>lado2 && v3>lado1)
         {
           
-            document.getElementById("area").innerHTML="el area del triangulo es:  "+a
+            document.getElementById("area").innerHTML="El area del triangulo es:  "+a
         }
         else
         {
-            document.getElementById("area").innerHTML="triangulo no validado"
+            document.getElementById("area").innerHTML="Triangulo no validado"
         }
 }
 function tipo(){
@@ -42,18 +42,18 @@ function tipo(){
         if(v1>lado3 && v2>lado2 && v3>lado1)
         {
             if(lado1==lado2 && lado1==lado3){
-                document.getElementById("titr").innerHTML="es un traingulo equilatero "
+                document.getElementById("titr").innerHTML="Es un traingulo equilatero "
             }
             else if(lado1==lado2 || lado1==lado3 || lado2==lado3){
-                document.getElementById("titr").innerHTML="es un traingulo isoseles "
+                document.getElementById("titr").innerHTML="Es un traingulo isoseles "
             }
             else {
-                document.getElementById("titr").innerHTML="es un traingulo escaleno "
+                document.getElementById("titr").innerHTML="Es un traingulo escaleno "
             }
         }
         else
         {
-            document.getElementById("titr").innerHTML="triangulo no validado"
+            document.getElementById("titr").innerHTML="Triangulo no validado"
         }
     
 }
